@@ -22,7 +22,13 @@ As the following figure shows, our network architecture is a 3D-Unet. It consist
 ### **Evaluation**
 
 We evaluate our model with two kinds of dataset. Both of them are extracted from **HGG testing set**. The first one uses **only FLAIR MRI** to train and the second combines **FLAIR and T1CE MRI**. </br>
-As Table shows the testing results of our two model trained with different MRI data, we empirically discover that the result of model trained with FLAIR and T1CE data is better than model with only FLAIR data. As the Dice score of FLAIR and T1CE is higher than only FLAIR and Hausdorff distance is smaller as well.</br> 
+
+As table shows the testing results of our two model trained with different MRI data, we empirically discover that the result of model trained with FLAIR and T1CE data is better than model with only FLAIR data. As the Dice score of FLAIR and T1CE is higher than only FLAIR and Hausdorff distance is smaller as well.</br> 
 <img src="https://user-images.githubusercontent.com/20013955/99253787-53979280-284c-11eb-9efd-63531b638079.PNG" width="400" height="200" />
+
+**Testing slice result from one patient**
+
+<img src="https://user-images.githubusercontent.com/20013955/99251640-a1120080-2848-11eb-9393-66daa1509f15.png" width="600" height="600" />
+
 
 
