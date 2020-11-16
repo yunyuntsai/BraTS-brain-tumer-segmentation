@@ -15,7 +15,14 @@ BraTS dataset is from Multimodal Brain Tumor Segmentation Challenge 2019. All Br
 
 **The Archtecture of 3D-UNet**</br>
 
-As the following figure shows, our network architecture is a 3D-Unet. It consists of encoder part (left) and decoder part (right). The encoder part follows the typical architecture of convolutional neural network, including repeated application of two 3x3 convolutions (unpadded convolutions), each followed by a leaky rectiﬁed linear unit (lReLU) and a 2x2 max pooling operation with stride 2 for downsampling. Every step in the decoder part consists of an upsampling of the feature map followed by a 3*3 convolution (“up-convolution”).
+As the following figure shows, our network architecture is a 3D-Unet. It consists of encoder part (left) and decoder part (right). The encoder part follows the typical architecture of convolutional neural network, including repeated application of two 3x3 convolutions (unpadded convolutions), each followed by a leaky rectiﬁed linear unit (lReLU) and a 2x2 max pooling operation with stride 2 for downsampling. Every step in the decoder part consists of an upsampling of the feature map followed by a 3*3 convolution (“up-convolution”).</br>
 
 <img src="https://user-images.githubusercontent.com/20013955/99251436-52646680-2848-11eb-9841-1c02873e3f37.PNG" width="600" height="300" />
+
+**Evaluation**
+
+We evaluate our model with two kinds of dataset. Both of them are extracted from **HGG testing set**. The first one uses **only FLAIR MRI** to train and the second combines **FLAIR and T1CE MRI**. </br>
+As Table shows the testing results of our two model trained with different MRI data, we empirically discover that the result of model trained with FLAIR and T1CE data is better than model with only FLAIR data. As the Dice score of FLAIR and T1CE is higher than only FLAIR and Hausdorff distance is smaller as well.</br> 
+<img src="https://user-images.githubusercontent.com/20013955/99253787-53979280-284c-11eb-9efd-63531b638079.PNG" width="600" height="300" />
+
 
