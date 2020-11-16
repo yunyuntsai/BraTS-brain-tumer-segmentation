@@ -1,9 +1,9 @@
 # Biomedical Image Anlysis Final: Brain Tumor Segmentaion
 
-### **Motivation:**</br>
+### **Motivation**</br>
 Quantitative assessment of brain tumor is an essential part of diagnose procedure. In this project, we aim to use object segmentation method to distinguish tumor part from Brain magnetic resonance images.
 
-### **Our goal:**</br>
+### **Our goal**</br>
 We demonstrate the effectiveness of a **3D-UNet** in the context of the **BraTS 2019 Challenge** and intend to improve the segmentation performance by using weighted mean square error (mse) loss function. 
 
 ### **Dataset**</br>
@@ -29,6 +29,10 @@ As table shows the testing results of our two model trained with different MRI d
 **Testing slice result from one patient**
 
 <img src="https://user-images.githubusercontent.com/20013955/99251640-a1120080-2848-11eb-9393-66daa1509f15.png" width="600" height="600" />
+
+### **Conclusion**
+
+In this project, we demonstrated the effectiveness of 3D-Unet on BraTS 2019 challenge. We used two different types of data, including FLAIR and T1CE to train our model and compared the performance of training result. In the training procedure, we utilized the **weighted-mse** loss function to solve the label imbalance problem and can indeed improve the accuracy. It is undoubted that the semantic segmentation of brain tumor is challenge and might need lots of additional preprocessing or post-processing procedure. In the future work, we might consider to combine multiple types of data together for ensemble training to enhance modalities and improve the performance of tumor segmentation. 
 
 
 
