@@ -17,7 +17,7 @@ BraTS dataset is from Multimodal Brain Tumor Segmentation Challenge 2019. All Br
 
 As the following figure shows, our network architecture is a 3D-Unet. It consists of encoder part (left) and decoder part (right). The encoder part follows the typical architecture of convolutional neural network, including repeated application of two 3x3 convolutions (unpadded convolutions), each followed by a leaky rectiﬁed linear unit (lReLU) and a 2x2 max pooling operation with stride 2 for downsampling. Every step in the decoder part consists of an upsampling of the feature map followed by a 3*3 convolution (“up-convolution”).</br>
 
-<img src="https://user-images.githubusercontent.com/20013955/99251436-52646680-2848-11eb-9841-1c02873e3f37.PNG" width="600" height="300" />
+<img src="https://user-images.githubusercontent.com/20013955/99251436-52646680-2848-11eb-9841-1c02873e3f37.PNG" width="800" height="250" />
 
 ### **Evaluation**
 
