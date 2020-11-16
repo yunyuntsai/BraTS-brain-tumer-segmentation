@@ -1,4 +1,4 @@
-# Biomedical Image Anlysis Final: Brain Tumor Segmentaion
+# Biomedical Image Anlysis Final Project: Brain Tumor Segmentaion
 
 ### **Motivation**</br>
 Quantitative assessment of brain tumor is an essential part of diagnose procedure. In this project, we aim to use object segmentation method to distinguish tumor part from Brain magnetic resonance images.
